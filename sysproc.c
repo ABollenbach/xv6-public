@@ -1,3 +1,4 @@
+
 #include "types.h"
 #include "x86.h"
 #include "defs.h"
@@ -6,6 +7,21 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
+
+int getreadcount = -1;
+
+
+int
+sys_getreadcount(void){
+  return getreadcount;
+}
+
+int
+sys_wcupa(void)
+{
+  getreadcount++;
+  return 1871;
+}
 
 int
 sys_fork(void)
