@@ -3,6 +3,6 @@
 #include "user.h"
 
 int main(void) {
-  printf("number of times 'wcupa' has been called: %d\n ", getreadcount);
+  printf(1, "number of times 'wcupa' has been called: %d", getreadcount(), "\n");
   exit();
 }

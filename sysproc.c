@@ -8,7 +8,7 @@
 #include "mmu.h"
 #include "proc.h"
 
-int getreadcount = -1;
+int getreadcount = 0;
 
 
 int
